@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'Bannertype_1';
+    src: url(./Bannertype1\ W00\ BoldCondensed.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Bannertype_1;
+}
+
+.header {
+    background-color: #84b524;
+}
+
+.header__link {
+    color: red;
+    margin: 20px;
+    text-decoration: none;
+}
+
+.header__text {
+    font-size: 45px;
+    margin-left: 230px;
+}
+
+.style__link {
+    border: 1px black;
+}
+
+.header__wrapper {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.header__logo {
+    height: 70px;
+}
+
+.header__heading {
+    margin-left: 230px;
+}
+
+.header__text {
+    margin-left: 230px;
+}
+
+.wrapper {
+    max-width: 1138px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 158px;
+    padding-bottom: 219px;
+}
+
+.color {
+    height: 456px;
+}
+
+.grid__one {
+    background-color: black;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    gap: 6px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 373px 759px;
+    grid-template-rows: 456px;
+}
+
+.grid__two {
+    gap: 6px;
+    display: grid;
+    grid-template-columns: 370px;
+    grid-template-rows: 100px 350px;
+}
+
+.grid__three {
+    display: grid;
+    grid-template-columns: 127px 127px 127px 127px 127px 127px;
+    grid-template-rows: 152px 152px 152px;
+    grid-template-areas:
+        " svg1  svg1 svg1 svg1 svg1 svg1"
+        " svg2 svg2 svg2 svg3 svg3 svg3"
+        "svg4 svg4 svg5 svg5 svg6 svg6 ";
+    overflow: hidden;
+}
+
+.footer {
+    background-color: #84b524;
+    height: 208px;
+}
+
+.grid__four {
+    display: grid;
+}
+
+.grid__text {
+    padding-top: 20px;
+    color: black;
+    margin-left: 45px;
+    text-decoration: none;
+}
+
+.grid__heading {
+    text-align: center;
+    font-size: 50px;
+    margin: 40px;
+}
+
+.element {
+    background-color:  #edffca;;
+}
+
+.icon {
+    width: 100%;
+    height: 100%;
+}
+
+.element-first-row--1 {
+    grid-area: svg1;
+}
+
+.element-second-row--2 {
+    grid-area: svg2;
+}
+
+.element-second-row--3 {
+    grid-area: svg3;
+}
+
+.element-second-row--4 {
+    grid-area: svg4;
+}
+
+.element-second-row--5 {
+    grid-area: svg5;
+}
+
+.element-second-row--6 {
+    grid-area: svg6;
+}
