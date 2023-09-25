@@ -177,44 +177,39 @@ main{
 }
 
 
-.menu:hover > .path1 {
-    animation: path1;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
+.menu__active .path1 {
+    animation: path1 3s forwards;
 }
 
 @keyframes path1 {
     0% {
-        
+        transform: rotate(0deg) translateX(0px) translateY(0px);
     }
     100% {
         transform: rotate(45deg) translateX(18px) translateY(-15px);
     }
 }
 
-.menu:hover > .path2 {
-    animation: path2;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
+.menu__active .path2 {
+    animation: path2 2s forwards;
 }
 
 @keyframes path2 {
     0% {
-
+        opacity: 1;
     }
     100% {
         opacity: 0;
     }
 }
 
-.menu:hover > .path3 {
-    animation: path3;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
+.menu__active .path3 {
+    animation: path3 3s forwards;
 }
 
 @keyframes path3 {
-    0% {    
+    0% {
+        transform: rotate(0deg) translateX(0px) translateY(0px);
     }
     100% {
         transform: rotate(-45deg) translateX(-35px) translateY(0px);
@@ -246,18 +241,11 @@ main{
 .hospital-text,
 .my__home-text {
     opacity: 0;
-    fill:rgb(226, 24, 47)
+    fill: rgb(226, 24, 47);
+    transition: opacity 0.5s;
 }
 
-.hospital:hover ~ .hospital-text {
-    opacity: 1;
-}
-
-.shope:hover ~ .shope-text {
-    opacity: 1;
-}
-
-.my__home:hover ~ .my__home-text {
+.text-active {
     opacity: 1;
 }
 
