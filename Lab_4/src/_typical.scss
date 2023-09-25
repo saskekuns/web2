@@ -1,0 +1,30 @@
+@mixin wrapper {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1240px;
+    padding: 10px 10px;
+}
+
+@mixin img {
+    max-width: 100%;
+    border-radius: 30px;
+}
+
+@mixin navigation {
+    padding: 0px;
+    margin: 10px 10px 0px 0px;
+}
+
+@mixin visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
