@@ -1,0 +1,266 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Bannertype_1;
+}
+
+button {
+    background-color: white;
+}
+  
+.wrapper {
+    padding-top: 100px;
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.header {
+    background-color: #84b524;
+}
+
+.style__link {
+    border: 1px black;
+}
+
+.header__wrapper {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    padding: 10px 0px;
+    justify-content: center;
+}
+
+.header__wrapper-1 {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    justify-content: space-around;
+}
+.header__wrapper-2 {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: space-around;
+}
+
+
+.header__logo {
+    height: 70px;
+}
+
+main{
+    background-color: #9FEE00;
+}
+
+.krest {
+    width: 100px;
+    height: 100px;
+}
+
+.krest:hover {
+    color: red;
+}
+
+.size {
+    width: 100px;
+    height: 100px;
+}
+
+
+
+.city_1-2 {
+    position: absolute;
+    top: 40px;
+    animation: city_1 infinite linear;
+    animation-duration: 3s;
+    animation-delay: 1.5s;
+}
+
+.city_1 {
+    animation: city_1 infinite linear;
+    animation-duration: 3s;
+}
+
+@keyframes city_1 {
+    0% {
+        transform: translate(-300px);
+    }
+    100% {
+        transform: translate(300px);
+    }
+}
+
+.city_2-1 {
+    position: absolute;
+    top: 20px;
+    animation: city_2 infinite linear;
+    animation-duration: 6s;
+    animation-delay: 3s;
+}
+
+.city_2 {
+    animation: city_2 infinite linear;
+    animation-duration: 6s;
+}
+
+@keyframes city_2 {
+    0% {
+        transform: translate(-300px);
+    }
+    100% {
+        transform: translate(300px);
+    }
+}
+
+
+.city_3 {
+    position: absolute;
+    animation: city_3 infinite linear;
+    animation-duration: 10s;
+}
+
+@keyframes city_3 {
+    0% {
+        transform: translate(-300px);
+    }
+    100% {
+        transform: translate(300px);
+    }
+}
+
+.city_3-2 {
+    animation: city_3 infinite linear;
+    animation-duration: 10s;
+    animation-delay: 5s;
+}
+
+
+.city {
+    list-style-type: none;
+    position: relative;
+    width: 200px;
+    overflow: hidden;
+    background-color: aquamarine;
+}
+
+.city_2  {
+    position: absolute;
+    top:20px;
+}
+
+.city_1 {
+    position: absolute;
+    top:40px;
+}
+
+
+
+
+
+.footer {
+    background-color: #84b524;
+    height: 208px;
+}
+
+
+.menu:hover > .path1 {
+    animation: path1;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes path1 {
+    0% {
+        
+    }
+    100% {
+        transform: rotate(45deg) translateX(18px) translateY(-15px);
+    }
+}
+
+.menu:hover > .path2 {
+    animation: path2;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes path2 {
+    0% {
+
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.menu:hover > .path3 {
+    animation: path3;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes path3 {
+    0% {    
+    }
+    100% {
+        transform: rotate(-45deg) translateX(-35px) translateY(0px);
+    }
+}
+
+
+
+.road {
+    margin-top: 100px;
+}
+
+.house {
+    position: absolute;
+    top: 224px;
+    left: 31px;
+}
+
+.long__home:hover,
+.hospital:hover,
+.shope:hover,
+.roma-1:hover,
+.roma-2:hover,
+.my__home:hover {
+    color: red;
+}
+
+.shope-text,
+.hospital-text,
+.my__home-text {
+    opacity: 0;
+    fill:rgb(226, 24, 47)
+}
+
+.hospital:hover ~ .hospital-text {
+    opacity: 1;
+}
+
+.shope:hover ~ .shope-text {
+    opacity: 1;
+}
+
+.my__home:hover ~ .my__home-text {
+    opacity: 1;
+}
+
+text {
+    font-size: 20px;
+}
