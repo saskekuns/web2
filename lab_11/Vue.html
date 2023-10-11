@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Vue</title>
+</head>
+<body>
+    <div id="app" class="wrapper">
+        <input type="text" v-model="textInput" :class="{ 'red-text': isTextTooLong }">
+        <button @click="addEntry" :disabled="textInput === '' || isTextTooLong">
+            Добавить запись
+        </button>
+        <p v-show="textInput.length > 0 && textInput.length <= maxCharacters" :class="{ 'green-text': textInput.length > 0 && textInput.length <= maxCharacters }">
+            Символов: {{ textInput.length }}/{{ maxCharacters }}
+        </p>
+        <p v-show="textInput.length > maxCharacters" class="red-text">
+            Негативное значение: {{ textInput.length - maxCharacters }}
+        </p>
+        <p v-if="entries.length === 0">
+            Нет записей
+        </p>
+        <p v-else-if="entries.length === 1">
+            Запись
+        </p>
+        <p v-else>
+            Записи
+        </p>
+        <p v-show="entries.length > 0">
+            Счетчик записей: {{ entries.length }}
+        </p>
+        <ul class="list">
+            <li class="item" v-for="entry in entries" :key="entry.id">
+                <p class="content">
+                    {{ entry.content }}
+                </p>
+                <p class="timestamp">
+                    {{ entry.timestamp }}
+                </p>
+            </li>
+        </ul>    
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./js/vue.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+@use "sass:map";
+@use '_colors' as *;
+
+@mixin grid-elem($col-num) {
+  .grid-#{$col-num} {
+    color: colors($colors, "standard-text-color");
+    background-color: colors($colors, "main-bg-color");
+    text-align: center;
+    padding: 15px;
+    font-size: 30px;
+    border-radius: 10px;
+    grid-column: span $col-num;
+  }
+}
+

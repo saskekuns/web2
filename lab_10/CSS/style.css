@@ -1,0 +1,361 @@
+.toasts {
+  padding: 5rem;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  background-color: green;
+  border-radius: 30px;
+}
+.toasts_active {
+  display: block;
+}
+.toasts_hidden {
+  animation: toastsHidden 0.3s forwards;
+}
+@media only screen and (min-width: 1200px) {
+  .toasts {
+    padding: 5rem;
+    min-width: 15rem;
+    border-radius: 30px;
+  }
+}
+
+@keyframes toastsHidden {
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+.toasts_error {
+  background-color: red;
+  border-radius: 30px;
+}
+
+.toasts__title {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  color: #54387f;
+  text-align: center;
+  margin: 0;
+  color: #fff;
+}
+@media (min-width: 1200px) {
+  .toasts__title {
+    margin-top: 0.8rem;
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+  }
+}
+
+.toasts__desc {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  color: #6a6a6a;
+  color: #fff;
+  margin: 0;
+}
+
+.toasts__close {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  border: none;
+  border-radius: 50px;
+  margin: 10px;
+  background: white;
+}
+
+.form {
+  border-radius: 20px;
+  padding: .9rem 2.5rem 3rem;
+  background-color: #b3ffb0;
+}
+
+.form__title {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.7rem;
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.form__label {
+  margin-top: 2rem;
+  width: 100%;
+}
+.form__label:nth-child(-n+3) {
+  width: calc(50% - 2rem);
+}
+
+.form__name, .form__class, .form__temp, .form__requirement, .form__number, .form__email, .form__surname {
+  width: 100%;
+  background-color: #b3ffb0;
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 1.4rem 0;
+  color: black;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+}
+.form__name::-moz-placeholder, .form__class::-moz-placeholder, .form__temp::-moz-placeholder, .form__requirement::-moz-placeholder, .form__number::-moz-placeholder, .form__email::-moz-placeholder, .form__surname::-moz-placeholder {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  color: #ffffff;
+}
+.form__name::placeholder, .form__class::placeholder, .form__temp::placeholder, .form__requirement::placeholder, .form__number::placeholder, .form__email::placeholder, .form__surname::placeholder {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  color: #ffffff;
+}
+
+.form__requirement {
+  resize: none;
+}
+
+.form__submit {
+  padding: 1.2rem;
+  margin-top: 2rem;
+  margin-right: auto;
+  background-color: #b3ffb0;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.4rem;
+  transition: transform 0.1s ease-in;
+  line-height: 2rem;
+}
+.form__submit:active {
+  transform: scale(0.9);
+}
+.form__submit[disabled] {
+  transform: scale(1);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.grid-container {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+
+.col-3 {
+  width: 80%;
+  max-width: 550px;
+  margin: 3em auto;
+  padding: 1em;
+  border: 2px solid #c27153; /* Updated */
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+
+.col-1 {
+  grid-column: span 1;
+}
+
+.col-2 {
+  grid-column: span 2;
+}
+
+.col-3 {
+  grid-column: span 3;
+}
+
+.col-4 {
+  grid-column: span 4;
+}
+
+.col-5 {
+  grid-column: span 5;
+}
+
+body {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+}
+body.lock {
+  overflow: hidden;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.skip-link {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 15px;
+  background: #F498AD;
+  transform: translateY(-2000px);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.header__wrapper {
+  display: flex;
+  max-width: 32rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  justify-content: center;
+}
+@media only screen and (min-width: 390px) {
+  .header__wrapper {
+    max-width: 39rem;
+    padding: 0 0.5rem;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .header__wrapper {
+    max-width: 57.6rem;
+    padding: 0 0.5rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .header__wrapper {
+    max-width: 120rem;
+    padding: 0 0.5rem;
+  }
+}
+
+.gallery__wrapper {
+  display: flex;
+  max-width: 32rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  flex-direction: column;
+}
+@media only screen and (min-width: 390px) {
+  .gallery__wrapper {
+    max-width: 39rem;
+    padding: 0 0.5rem;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .gallery__wrapper {
+    max-width: 57.6rem;
+    padding: 0 0.5rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .gallery__wrapper {
+    max-width: 120rem;
+    padding: 0 0.5rem;
+  }
+}
+.gallery__loading {
+  position: absolute;
+  top: 8%;
+  right: 5%;
+  transform: translateX(50%) translateY(-50%);
+  width: 8rem;
+}
+.gallery__loading_none {
+  display: none;
+}
+.gallery__button {
+  width: 5rem;
+  margin: 0 auto;
+  border: 0;
+  padding: 0;
+  background: white;
+  cursor: pointer;
+}
+.gallery__retry {
+  width: 100%;
+  padding-top: 15px;
+}
+.gallery__list {
+  display: grid;
+  margin-top: 3rem;
+  grid-template-columns: repeat(12, 1fr);
+}
+.gallery__error {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.3rem;
+  color: #c6462c;
+  text-align: center;
+  grid-column: 1/-1;
+}
+@media (min-width: 1200px) {
+  .gallery__error {
+    font-size: 4.6rem;
+    line-height: 6.3rem;
+  }
+}
+.gallery__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gallery__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gallery__item-desc {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  color: #6a6a6a;
+}
+
+.temperature {
+  margin-top: 2rem;
+}
+.temperature__wrapper {
+  display: flex;
+  max-width: 32rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  justify-content: center;
+}
+@media only screen and (min-width: 390px) {
+  .temperature__wrapper {
+    max-width: 39rem;
+    padding: 0 0.5rem;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .temperature__wrapper {
+    max-width: 57.6rem;
+    padding: 0 0.5rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .temperature__wrapper {
+    max-width: 120rem;
+    padding: 0 0.5rem;
+  }
+}

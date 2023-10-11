@@ -1,0 +1,72 @@
+@use '_colors' as *;
+@use '_typical' as *;
+
+section {
+    overflow: hidden;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header__wrapper {
+    @include wrapper_mobil;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.header__link {
+    color: black;
+    text-decoration: none;
+    z-index: 1;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 0;
+    top: 500px;
+}
+.add-box {
+    z-index: 1;
+}
+.red {
+    background: rgb(255, 0, 0);
+}
+.blue {
+    background: rgb(4, 0, 255);
+}
+.add-box__button {
+    padding: 24px 80px 22px 72px;
+    border-radius: 44px;
+    background-color: #3498db; 
+    color: white; 
+    border: none;
+    order: 0;
+    flex-grow: 0;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-box {
+    @include wrapper_mobil;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px 890px 0px;
+
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+

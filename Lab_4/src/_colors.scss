@@ -1,0 +1,21 @@
+@use "sass:map";
+
+
+$colors: (
+    "main-bg-color": #C6FFC1,
+    "side-bg-color": #D5FFCC,
+    "standard-text-color": black,
+    "active-color": #A6FFB3,
+    "btn-color": #C7F9BE,
+    "text-active": #4AC918,
+    "btn-disable": grey,
+    "btn-gradient": #B9E0A6
+);
+
+@function colors($map, $key) {
+    @return map.get($map,$key);
+};
+
+@mixin gradient ($initial-clr, $final-clr){
+    background: linear-gradient(to left, $initial-clr, $final-clr);
+}

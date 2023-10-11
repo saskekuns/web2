@@ -1,0 +1,17 @@
+@use "sass:map";
+
+
+$colors: (
+    "main-bg-color":#FFF8F2,
+    "side-bg-color":#FFCCD5,
+    "standard-text-color": black,  
+    "heading-color": #1C0E0D,
+    "btn-color":#FF553E,
+    "facts-number-text":#18063C,
+    "header-text-color":#40201E,
+    "additional-text":#404040
+);
+
+@function colors($map, $key) {
+    @return map.get($map,$key);
+};
